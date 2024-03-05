@@ -4,7 +4,7 @@ echo
 echo "[*] Installing requirements ..."
 echo
 pip install colorama requests
-apt upgrade && apt-get install nodejs npm
+apt update && apt upgrade -y && apt-get install -y nodejs npm
 echo
 echo "[*] Installing API Module ..."
 echo
@@ -15,4 +15,3 @@ echo
 truecallerjs login
 echo
 echo "[+] Done!"
-echo
